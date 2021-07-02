@@ -1,3 +1,10 @@
+#include <stdio.h>
+#include <assert.h>
+#include <string.h>
+#include <cs50.h>
+#include <math.h>
+#include <ctype.h>
+
 void swap_max(int arr[], int l, int n)
 {
 int max = arr[n];
