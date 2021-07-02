@@ -4,30 +4,26 @@
 #include <cs50.h>
 #include <math.h>
 #include <ctype.h>
-
-void swap_max(int arr[], int l, int n)
+void swap_max(int arr[],int l,int n)
 {
-int max = arr[n];
-int index = n;
+int max=arr[n];
+int index=n;
 int i;
-for(i = n; i < l; i++)
+for(i=n;i<l;i++)
 {
-if(arr[i] > max)
+if(arr[i]>max)
 {
-max = arr[i];
-index = i;
+max=arr[i];
+index=i;
 }
+} int temp;
+temp=arr[n];
+arr[n]=max;
+arr[index]=temp;
 }
-int temp;
-temp = arr[n];
-arr[n] = max;
-arr[index] = temp;
-}
-void ssort(int arr[], int l)
+void ssort(int arr[],int l)
 {
 int i;
-for (i = 0; i < 1; i++)
-{
-swap_max(arr, l, i);
-}
+for(i=0;i<l;i++)
+swap_max(arr,l,i);
 }
